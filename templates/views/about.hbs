@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     {{>headerlinks}}
+    <title>About Page</title>
+    <style >
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+ footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+  }
+
+    </style>
+</head>
+
+<body>
+  
+
+   {{>navbar}}
+
+
+    <!--  main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">  
+                <div class="row">
+                    <!-- left side div -->
+
+                    <div class="col-md-6 col-12 main_header_right">
+                        <figure>
+                            <img src="images/about.jpg" alt="Brijesh" class="img-fluid" title="Brijesh Singh">
+                        </figure>
+                        </div>
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p> Welcome to Weather app</p>
+                        <h1>I am a  <span class="text_clr">Frontend developer </span> and Freelancer </h1>
+                        <a href="https://brijesh2004.github.io/myportfolio.github.io/" target="_Brijesh"><button>About me</button></a>
+                    </div>
+                    <!-- right side div -->
+                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- footer code  -->
+        {{>footer}}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

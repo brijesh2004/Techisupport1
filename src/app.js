@@ -17,7 +17,7 @@ app.set('views',template_path);
 hbs.registerPartials(partial_path);
 
 app.use(express.static(staticPAth));
-
+ 
 
  
 // routing 

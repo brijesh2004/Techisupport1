@@ -22,22 +22,44 @@ background-color: rgb(70, 60, 60);
 }
 
 .nav-item {
+  height: 30px;
+  padding: 0 20px 0 20px;
   color: white;
+}
+.nav-item:hover{
+  /* text-shadow: 2px 2px 2px wheat; */
+  background: none;
+  box-shadow: 0 0 5px rgb(219, 102, 102);
+  border-radius: 10px;
+  
 }
 
 .navBtn {
-  width: 150px;
+  width: 97px;
+  height: 32px;
+  box-shadow: 0 0 10px white;
   background-color: rgb(12, 184, 232);
+}
+.navBtn:hover{
+  background: rgb(238, 118, 118);
+ 
 }
 
 .channel_name {
-  text-shadow: 5px 5px 5px pink;
+  text-shadow: 5px 5px 5px white;
+  color: rgb(36, 219, 252);
+  font-weight: bolder;
 }
 
 .heading {
   /* margin-top: 40px; */
+  height: 70vh;
+  width: 100vw;
+  background-image: url(/images/banner.png);
+  background-repeat: no-repeat;
+  background-size:cover;
   text-align: center;
-  color: deeppink;
+  
 }
 
 .heading_data {

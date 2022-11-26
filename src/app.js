@@ -3,6 +3,7 @@ const app = express();
 const path = require("path")
 const hbs = require('hbs');
 const port = process.env.PORT || 8000;
+const hostname="0.0.0.0"
 // public static path 
 
 const staticPAth = path.join(__dirname , "../public");
@@ -26,9 +27,22 @@ app.get( "/" ,(req,res)=>{
 app.get( "/about" ,(req,res)=>{
     res.render("about");
 })
+ 
+app.get( "/sourcecode" ,(req,res)=>{
+    res.render("sourcecode");
+})
 
-app.get( "/weather" ,(req,res)=>{
-    res.render("weather");
+app.get( "/video" ,(req,res)=>{
+    res.render("video");
+})
+app.get( "/C_CPP" ,(req,res)=>{
+    res.render("C_CPP");
+})
+app.get( "/DSASheet" ,(req,res)=>{
+    res.render("DSASheet");
+})
+app.get( "/JAVA" ,(req,res)=>{
+    res.render("JAVA");
 })
 app.get( "*" ,(req,res)=>{
     res.render("404error");

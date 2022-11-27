@@ -69,3 +69,5 @@ async function getInfo(event) {
   }
 }
 submitBtn.addEventListener('click',getInfo);
+
+     

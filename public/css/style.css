@@ -7,11 +7,12 @@
 .navbarMain {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   /* position: fixed; */
   position: fixed;
   color: white;
   opacity: 2;
+  z-index: 999;
 }
 
 .navbar {
@@ -22,6 +23,7 @@ background-color: rgb(70, 60, 60);
 }
 
 .nav-item {
+  /* display: inline; */
   height: 30px;
   padding: 0 20px 0 20px;
   color: white;

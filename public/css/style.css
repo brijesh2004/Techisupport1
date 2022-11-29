@@ -16,7 +16,7 @@
 }
 
 .navbar {
-background-color: rgb(70, 60, 60);
+  background-color: rgb(70, 60, 60);
   /* background-color: rgb(179, 177, 177); */
   box-shadow: 10px 10px 10px rgb(35, 34, 34);
   color: white;
@@ -28,12 +28,13 @@ background-color: rgb(70, 60, 60);
   padding: 0 20px 0 20px;
   color: white;
 }
-.nav-item:hover{
+
+.nav-item:hover {
   /* text-shadow: 2px 2px 2px wheat; */
   background: none;
   box-shadow: 0 0 5px rgb(219, 102, 102);
   border-radius: 10px;
-  
+
 }
 
 .navBtn {
@@ -42,9 +43,10 @@ background-color: rgb(70, 60, 60);
   box-shadow: 0 0 10px white;
   background-color: rgb(12, 184, 232);
 }
-.navBtn:hover{
+
+.navBtn:hover {
   background: rgb(238, 118, 118);
- 
+
 }
 
 .channel_name {
@@ -55,13 +57,13 @@ background-color: rgb(70, 60, 60);
 
 .heading {
   /* margin-top: 40px; */
-  height: 70vh;
+  height: 48vh;
   width: 100vw;
   background-image: url(/images/banner.png);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: 100%;
   text-align: center;
-  
+
 }
 
 .heading_data {
@@ -91,7 +93,8 @@ background-color: rgb(70, 60, 60);
   /* box-shadow: 10px 10px 0px gray; */
 
 }
-.videoboxall:hover{
+
+.videoboxall:hover {
   border-radius: 20px;
   background-color: rgb(207, 198, 198);
   box-shadow: 10px 10px 10px gray;
@@ -100,21 +103,24 @@ background-color: rgb(70, 60, 60);
 .advetisement {
   display: flex;
   justify-content: center;
- 
+
 }
-.ad_img_size{
+
+.ad_img_size {
   text-align: center;
   width: 60vw;
   border: 2px solid black;
   height: 300px;
 }
+
 .advertisement_img {
   width: 60vw;
   height: 300px;
 }
-.box1_para{
-font-size: 15px;
-font-weight: 700;
+
+.box1_para {
+  font-size: 15px;
+  font-weight: 700;
 }
 
 
@@ -154,29 +160,114 @@ font-weight: 700;
 }
 
 
-   /* contact page style start  */
+/* contact page style start  */
 
-   .Contact_section{
-    text-align: center;
-    color: white;
-    background-color: black;
-    margin-top: 30px;
-   }
+.Contact_section {
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin-top: 30px;
+}
 
-   .contactpara{
-    font-size: 26px;
+.contactpara {
+  font-size: 26px;
   font-style: oblique;
-  font-weight: 900;  
-  }
+  font-weight: 900;
+}
 
 
-     /* Feedback area style from here  */
-     #feedbackarea{
-      background-color: blueviolet;
-      text-align: center;
-      color: white;
-     }
+/* Feedback area style from here  */
+.title2 {
+  position: relative;
+  margin-top: -16px;
+  margin-left: 35px;
+}
 
- #feedbackarea textarea {
-      resize: none;
-   }
+.title2 span {
+  font-weight: 782;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  color: #2E3D49;
+}
+
+.title2 .shortdesc2 {
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #2E3D49;
+  margin-bottom: 10px;
+}
+
+.feedbox {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("/b4.jpg");
+  background-size: cover;
+  padding: 50px 80px;
+  background-attachment: fixed;
+}
+
+.feed {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.6),
+    0 0 80px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.feed form {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.feed form label {
+  position: absolute;
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.feed form input,
+.feed textarea {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px lightgray;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  color: #2E3D49;
+  background: #fff9;
+  font-weight: 600;
+}
+
+.feed form input {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.feed form .fname {
+  width: 100%;
+}
+
+.feed form textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.feed #csubmit {
+  margin-top: 10px;
+  background: linear-gradient(to right, blue, white);
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+

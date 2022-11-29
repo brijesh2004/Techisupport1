@@ -1,0 +1,38 @@
+
+
+
+  @media (max-width: 742px){
+     .about-content .column{
+      width: 100%;
+      padding-left: 20px;
+  }
+   .about-content .left{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
+  }
+  .about-content .right{
+      flex: 100%;
+  }  
+  }
+ 
+  @media (max-width:1352px){
+    .heading{
+      height: 56vh;
+    }
+  }
+  @media (max-width:718px){
+    .heading{
+      height: 30vh;
+    }
+  }
+  @media (max-width:784px){
+    .heading{
+      height: 36vh;
+    }
+  }
+  @media (max-width:518px){
+    .heading{
+      height: 18vh;
+    }
+  }

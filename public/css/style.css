@@ -57,7 +57,7 @@ background-color: rgb(70, 60, 60);
   width: 100vw;
   background-image: url(/images/banner.png);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:100%;
   text-align: center;
   
 }
@@ -68,14 +68,26 @@ background-color: rgb(70, 60, 60);
 }
 
 /* video page style */
+
+
 .pairvideo {
   display: flex;
   justify-content: center;
   margin: 10px;
+  width: 100%;
   overflow-x: auto;
   background-color: rgb(43, 38, 38);
 }
-
+@media (max-width:1600px){
+  .pairvideo {
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgb(43, 38, 38);
+  }
+}
 .videoboxall {
   text-align: center;
   width: 200px;
@@ -83,6 +95,7 @@ background-color: rgb(70, 60, 60);
   background-color: white;
   /* height: 320px; */
   box-sizing: border-box;
+ 
   /* border: 1px solid gray; */
   /* background: rgb(184, 178, 178); */
   margin: 20px;
@@ -93,6 +106,10 @@ background-color: rgb(70, 60, 60);
   border-radius: 20px;
   background-color: rgb(207, 198, 198);
   box-shadow: 10px 10px 10px gray;
+  transition: 0.5s;
+  
+  transform: translateZ(50px);
+  transform: translateY(-10px);
 }
 
 .advetisement {

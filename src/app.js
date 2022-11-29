@@ -47,6 +47,9 @@ app.get( "/DSASheet" ,(req,res)=>{
 app.get( "/JAVA" ,(req,res)=>{
     res.render("JAVA");
 })
+app.get( "/templates/views/sourceCode/greeting" ,(req,res)=>{
+    res.render("sourceCode/greeting");
+})
 app.get( "*" ,(req,res)=>{
     res.render("404error");
 })

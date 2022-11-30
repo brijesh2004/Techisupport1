@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="/css/responsive.css">
+	 <link rel="stylesheet" href="/css/aboutpage.css">
+	 <link rel="stylesheet" href="/css/footer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="shortcut icon" href="/images/channels4_profile.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../templates/views/sourceCode/codecss/style.css">
+    <title>Greeting Dynamic </title>
+    <style>
+.code{
+    width: 80vw;
+    max-height: 500px;
+    overflow: auto;
+   /* text-align: center; */
+   
+    display: block;
+    margin: auto;
+    background-color: rgb(179, 172, 172);
+}
+
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <h2>Greeting Dynamic JavaScript Project Code Code </h2>
+    <p>Step-1</p>
+    <p> Create a index.html file </p>
+    and add paste the below code in .html file
+    <div class="code">
+        <pre> 
+            &lt;html&gt;
+            &lt;head&gt;
+           
+            &lt;title&gt;  Java Script Greeting &lt;/title&gt;
+                &lt;link rel="stylesheet" href="style.css" &gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                
+                &lt;div&gt;
+                
+                &lt;h1&gt; Hello Sir , &lt;span id="greet"&gt; &lt;/span&gt; &lt;/h1&gt;
+                
+                &lt;/div&gt;
+                &lt;script src="script.js"&gt;  &lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+    </pre>
+    </div>
+    <p>Step-2</p>
+    <p> Create a style.css file </p>
+    and add paste the below code in .css file
+    <div class="code">
+        <pre>
+            body{
+                background:gray;
+                user-select:none;
+                }
+                div{
+                width:70vw;
+                position:relative;
+                justify-content:center;
+                align-items: center;
+                border-radius:20px;
+                background:pink;
+                display:flex;
+                margin-top:50px;
+                margin-left:15vw;
+                margin-right:15vw;
+                
+                box-shadow:-10px -10px 10px yellow;
+                cursor:pointer;
+                }
+                h1{
+                text-align:center;
+                
+                }
+                
+                span{
+                text-shadow:5px 5px 5px green;
+                }
+                
+                div:hover{
+                box-shadow:10px 10px 10px darkblue;
+                margin-top:55px;
+                }
+                
+                
+                @media (max-width:700px){
+                div{
+                width:90vw;
+                margin-left:5vw;
+                margin-right:5vw;
+                }
+                }
+                
+                @media (max-width:500px){
+                div{
+                width:100vw;
+                margin-left:0;
+                margin-right:0;
+                }
+                }
+        </pre>
+    </div>
+    <p>Step-3</p>
+    <p> Create a script.js file </p>
+    and add paste the below code in .js file
+    <div class="code">
+        <pre>
+          
+         let currDate= new Date();
+         currDate=currDate.getHours();
+
+
+         let greet=document.getElementById("greet");
+
+        
+         if(currDate>=0 &#38;&#38; currDate<12){<br>
+         greet.innerHTML="GOOD MORNING";
+         greet.style.color="green";
+         }
+       
+         else if(currDate>=12 &#38;&#38; currDate<19){<br>
+         greet.innerHTML="GOOD AFTERNOON";
+         greet.style.color="yellow";
+         }
+      
+         else {
+         greet.innerHTML="GOOD NIGHT";
+         greet.style.color="blue";
+         }
+        
+       </pre>
+       
+    </div>
+    <br><br>
+    {{>bottom}}
+</body>
+
+</html>

@@ -79,5 +79,7 @@ footer .btn {
 	transition: opacity .3s linear;	
 }
 footer .btn:hover {
-	opacity: .7;
+	/* opacity: .7; */
+	transition: 1s;
+	border-radius: 40px;
 }

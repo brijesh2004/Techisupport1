@@ -65,44 +65,6 @@
   <h1 class="heading"> <span class="channel_name">TECHI SUPPORT </span></h1>
   <br><br><br>
 
-     <p class="para" style="font-size: 25px;">100+ JavaScript Project for Beginner and Intermediate</p>
-       
-       <p class="para">Video and source code Both are Available Free  </p>
-       <div class="para">
-       <a href="/video" > <button class="navBtn">Go Now</button></a>
-       </div>
-       <br>
-       <div class="advetisement">
-        <div class="ad_img_size">
-        <img src="#" alt="Advertisement" srcset="" class="advertisement_img">
-        </div>
-      </div>
-       <br>
-       <p class="para" style="font-size: 25px;">50+ C/C++ Project for  Beginner and Intermediate</p>
-       
-       <p class="para">Video and source code Both are Available Free  </p>
-       <div class="para">
-       <a href="/C_CPP" > <button class="navBtn">Go Now</button></a>
-       </div>
-       <br>
-       <div class="advetisement">
-        <div class="ad_img_size">
-        <img src="#" alt="Advertisement" srcset="" class="advertisement_img">
-        </div>
-      </div>
-      <p class="para" style="font-size: 25px;">DSA sheet For Beginner</p>
-       
-      <p class="para">450+ Question Solve  </p>
-      <div class="para">
-      <a href="/DSASheet" > <button class="navBtn">Go Now</button></a>
-      </div>
- <br>
-      <section class="feedback" id="feedbackarea">
-        <p class="box1_para">Give your Feedback </p>
-        Name <input type="text" > <br> <br>
-        Email <input type="email" > <br> <br>
-        Give feedback <br> <textarea name="text" id="textarea" cols="70" rows="10"></textarea> <br>
-       <button class="navBtn">Submit</button>
   <p class="para" style="font-size: 25px;">100+ JavaScript Project for Beginner and Intermediate</p>
 
   <p class="para">Video and source code Both are Available Free </p>
@@ -120,7 +82,7 @@
 
   <p class="para">Video and source code Both are Available Free </p>
   <div class="para">
-    <a href="/video"> <button class="navBtn">Go Now</button></a>
+    <a href="/C_CPP"> <button class="navBtn">Go Now</button></a>
   </div>
   <br>
   <div class="advetisement">
@@ -132,14 +94,14 @@
 
   <p class="para">450+ Question Solve </p>
   <div class="para">
-    <a href="/video"> <button class="navBtn">Go Now</button></a>
+    <a href="/DSASheet"> <button class="navBtn">Go Now</button></a>
   </div>
   <br>
   <!-- feedback-form  -->
   <div class="title2" id="feedBACK"> <br><br><br><br>
     <span>Give Feedback</span>
     <div class="shortdesc2">
-      <p style="font-size: 17px;">Please share your valuable feedback to us</p>
+      <p style="font-size: 27px;">Please share your valuable feedback to us</p>
     </div>
   </div>
   <div class="feedbox">
@@ -150,8 +112,8 @@
         <label>Email</label><br>
         <input type="email" name="mail" required="required"><br>
         <label>Additional Details</label><br>
-        <textarea name="addtional"></textarea><br>
-        <button type="submit" id="csubmit">Send Message</button>
+        <textarea name="addtional" class="textarea"></textarea><br>
+        <button type="submit" id="csubmit" onclick="SendEmail()">Send Message</button>
       </form>
     </div>
   </div>
@@ -163,19 +125,20 @@
   <footer>
     <div class="footer-container">
       <div class="left-col">
-        <img src="footer.png" style="width: 100px;">
+      <!-- //  <img src="footer.png" style="width: 100px;"> -->
         <div class="logo"></div>
         <div class="social-media">
-          <a href="#">github<img src=""></a>
-          <a href="#">linkedin<img src=""></a>
-          <a href="#">instagram<img src=""></a>
-          <a href="" target="_blank">youtube<img src=""></a>
-          <a href="#">hackerrank<img src="link.png"></a>
+          <a href="#"><i class="fa fa-telegram" style="font-size:48px;color:red"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square" style="font-size:48px;color:red"></i></a>
+          <a href="#"><i class="fa fa-instagram" style="font-size:48px;color:red"></i></a>
+          <a href="" target="_blank"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
+          <a href="" target="_blank"><i class="fa fa-facebook-f" style="font-size:48px;color:red"></i></a>
+         
         </div><br><br>
       </div>
-      <div class="middle">
+      <!-- <div class="middle">
         <h4 style="color: white;">links</h4>
-      </div>
+      </div> -->
       <div class="right-col">
         <h1 style="color: #fff">Our Newsletter</h1>
         <div class="border"></div><br>
@@ -185,10 +148,15 @@
           <input class="btn" type="submit" value="Submit">
         </form>
       </div>
+      </div>
+    </footer>
+
+    <script src="../src/app.js"></script>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

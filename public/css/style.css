@@ -197,6 +197,7 @@
 
 
 /* Feedback area style from here  */
+
 .title2 {
   position: relative;
   margin-top: -16px;
@@ -216,6 +217,7 @@
   font-size: 15px;
   color: #2E3D49;
   margin-bottom: 10px;
+  
 }
 #feedBACK{
   text-align: center;
@@ -229,6 +231,8 @@
   background-size: cover;
   padding: 50px 80px;
   background-attachment: fixed;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 .textarea{
   resize: none;
@@ -245,6 +249,7 @@
   box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.6),
     0 0 80px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.4);
+ 
 }
 
 .feed form {

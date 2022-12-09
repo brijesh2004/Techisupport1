@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/aboutpage.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/images/channels4_profile.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../templates/views/sourceCode/codecss/style.css">
+    <title>Analog Clock </title>
+    <style>
+        .code {
+            width: 80vw;
+            max-height: 500px;
+            overflow: auto;
+            /* text-align: center; */
+
+            display: block;
+            margin: auto;
+            background-color: rgb(179, 172, 172);
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <br><br><br><br>
+    <h2>Analog Clock JavaScript Project Source Code </h2>
+    <p>Step-1</p>
+    <p> Create a index.html file </p>
+    and add paste the below code in .html file
+    <div class="code">
+        <pre>
+        
+           &lt;!DOCTYPE html&gt;
+
+         &lt;html&gt;
+         &lt;head&gt;
+          &lt;title&gt;Clock &lt;/title&gt;
+          &lt;style&gt;
+          #clockContainer{
+          position:relative;
+          margin:auto;
+          width:40vw;
+          height:40vw;
+          background:url('clock.png') no-repeat;
+          background-size:100%;
+          }
+
+
+         #hour,#minute, #second{
+         position:absolute;
+         background:black;
+         border-radius:10px;
+         transform-origin:bottom;
+         }
+
+         #hour{
+         width:1.4%;
+         height:23%;
+         top:27%;
+         background:green;
+         left:49.5%;
+         }
+
+        #minute{
+        width:1.2%;
+        height:27%;
+        top:23%;
+        left:49.5%;
+        opacity:0.8;
+        background:yellow;
+        }
+
+        #second{
+        width:1%;
+        height:32%;
+        top:18%;
+        left:49.5%;
+        background:blue;
+        opacity:0.8;
+
+
+        }
+
+         &lt;/style&gt;
+        &lt;script&gt;
+          setInterval(() => {
+         d = new Date();
+          htime = d.getHours();
+          mtime = d.getMinutes();
+            stime = d.getSeconds();
+           hrotation = 30*htime + mtime/2;
+           mrotation =6*mtime;
+                srotation =6*stime;
+
+           hour.style.transform=`rotate(${hrotation}deg)`;
+           minute.style.transform=`rotate(${mrotation}deg)`;
+             second.style.transform=`rotate(${srotation}deg)`;
+
+            },1000);
+
+            &lt;/script&gt;
+            &lt;/head&gt;
+
+            &lt;body&gt;
+
+
+
+            &lt;div id="clockContainer"&gt;
+            &lt;div id="hour" &gt;</div&gt;
+            &lt;div id="minute" &gt;</div&gt;
+            &lt;div id="second" &gt;</div&gt;
+            &lt;/div&gt;
+
+
+
+               &lt;/body&gt;
+               &lt;/html&gt;
+    </pre>
+    </div>
+   
+    <br><br>
+    {{>bottom}}
+</body>
+
+</html>

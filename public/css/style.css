@@ -231,8 +231,6 @@
   background-size: cover;
   padding: 50px 80px;
   background-attachment: fixed;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 80px;
 }
 .textarea{
   resize: none;

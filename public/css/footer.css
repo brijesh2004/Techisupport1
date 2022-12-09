@@ -2,8 +2,7 @@ footer {
 	color: #E5E8EF;
 	background: #000D;
 	padding: 50px 0; 
-	border-top-left-radius: 70px;
-	border-top-right-radius: 70px;
+	
 }
 footer .footer-container {
 	max-width: 1301px;
@@ -62,9 +61,15 @@ footer .txtb {
 	font-weight: 700;
 	outline: none;
 	border-radius: 5px;
-	min-width: 260px;
+	/* min-width: 260px; */
 	margin-top: 20px;
 	color: white;
+}
+
+@media (max-width: 785px){
+	footer .txtb{
+		width: 50px;
+	}
 }
 footer .btn {
 	margin-top: 20px;

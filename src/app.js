@@ -58,6 +58,22 @@ app.get( "/templates/views/sourceCode/movingcircle" ,(req,res)=>{
 app.get( "/templates/views/sourceCode/searchimage" ,(req,res)=>{
     res.render("sourceCode/searchimage");
 })
+app.get("/templates/views/sourceCode/AnalogClock" ,(req,res)=>{
+    res.render("sourceCode/AnalogClock");
+})
+app.get("/templates/views/sourceCode/ferriesWheel" ,(req,res)=>{
+    res.render("sourceCode/ferriesWheel");
+})
+app.get("/templates/views/sourceCode/MovingSquare" ,(req,res)=>{
+    res.render("sourceCode/MovingSquare");
+})
+app.get("/templates/views/sourceCode/DivMoveWithCursor" ,(req,res)=>{
+    res.render("sourceCode/DivMoveWithCursor");
+})
+
+app.get("/templates/views/sourceCode/CssWave" ,(req,res)=>{
+    res.render("sourceCode/CssWave");
+})
 app.get( "*" ,(req,res)=>{
     res.render("404error");
 })

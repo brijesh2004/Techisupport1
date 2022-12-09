@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="/css/responsive.css">
+	 <link rel="stylesheet" href="/css/aboutpage.css">
+	 <link rel="stylesheet" href="/css/footer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="shortcut icon" href="/images/channels4_profile.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../templates/views/sourceCode/codecss/style.css">
+    <title> Moving square  CSS Project </title>
+    <style>
+.code{
+    width: 80vw;
+    max-height: 500px;
+    overflow: auto;
+   /* text-align: center; */
+   
+    display: block;
+    margin: auto;
+    background-color: gray;
+}
+
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <br><br><br> <br>
+    <h2 style="text-align: center;">Moving Square CSS Project Source Code </h2>
+    <p style="text-align: center;">Step-1</p>
+    <p style="text-align: center;"> Create a index.html file </p>
+      <p style="text-align: center;"> and add paste the below code in .html file</p>
+    <div class="code">
+        <pre> 
+          
+           
+          &lt;!DOCTYPE html&gt;
+    
+         &lt;html lang="en"&gt;
+         &lt;head&gt;
+             &lt;meta charset="UTF-8"&gt;
+             &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+             &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+             &lt;link rel="stylesheet" href="style.css"&gt;
+             &lt;title>Document&lt;/title&gt;
+         &lt;/head&gt;
+         &lt;body&gt;
+   
+             &lt;div class="sqaure1"&gt;&lt;/div&gt;
+             &lt;div class="sqaure2"&gt;&lt;/div&gt;
+             &lt;div class="sqaure3"&gt;&lt;/div&gt;
+             &lt;div class="sqaure4"&gt;&lt;/div&gt;
+             &lt;div class="sqaure5"&gt;&lt;/div&gt;
+             &lt;div class="sqaure6"&gt;&lt;/div&gt;
+         &lt;/body&gt;
+         &lt;/html&gt;
+    </pre>
+    </div>
+    <p style="text-align: center;">Step-2</p>
+    <p style="text-align: center;"> Create a style.css file </p>
+   <p style="text-align: center;"> and add paste the below code in .css file </p>
+    <div class="code">
+        <pre>
+       *{
+      margin: 0;
+       padding: 0;
+      }
+          body{
+            background-color: rgb(13, 13, 15);
+              }
+
+           .sqaure1{
+               position: absolute;
+               width: 350px;
+               height: 350px;
+  
+               left: 36%;
+               top: 30%;
+               background-color: green;
+               opacity: 0.8;
+               border: 1px solid green;
+  
+                animation: rotate 10s linear infinite;
+            }
+
+           .sqaure2{
+               position: absolute;
+               width: 300px;
+               height: 300px;
+               left: 38%;
+               top: 35%;
+               background-color: rgb(216, 198, 35);
+    
+               opacity: 0.8;
+               transform: rotate(45deg);
+               animation: rotate1 3s linear infinite;
+           }
+           .sqaure3{
+               position: absolute;
+               width: 250px;
+               height: 250px;
+               left: 40%;
+               top: 38%;
+              background-color: red;
+    
+              opacity: 0.8;
+              transform: rotate(60deg);
+              animation: rotate2 3s linear infinite;
+          }
+
+          .sqaure4{
+              position: absolute;
+              width: 200px;
+              height: 200px;
+              left: 42%;
+              top: 41%;
+              background-color: blue;
+    
+             opacity: 0.8;
+             transform: rotate(60deg);
+             animation: rotate1 3s linear infinite;
+         }
+
+         .sqaure5{
+             position: absolute;
+             width: 150px;
+             height: 150px;
+             left: 44%;
+             top: 44%;
+             background-color: palevioletred;
+    
+             opacity: 0.8;
+             transform: rotate(60deg);
+             animation: rotate2 3s linear infinite;
+         }
+         .sqaure6{
+             position: absolute;
+             width: 100px;
+             height: 100px;
+             left: 45%;
+             top: 47%;
+             background-color: rgb(19, 244, 252);
+    
+                opacity: 0.8;
+                transform: rotate(60deg);
+                animation: rotate1 3s linear infinite;
+            }
+
+
+            @keyframes rotate{
+               to{
+                transform: rotate(0);
+               }
+               from{
+                transform: rotate(360deg);
+               }
+          }
+          @keyframes rotate1{
+              to{
+               transform: rotate(45deg);
+              }
+              from{
+               transform: rotate(-45deg);
+              }
+           }
+           @keyframes rotate2{
+              to{
+               transform: rotate(-45deg);
+              }
+              from{
+               transform: rotate(45deg);
+              }
+           }
+        </pre>
+    </div>
+   
+    <br>
+    {{>bottom}}
+</body>
+
+</html>

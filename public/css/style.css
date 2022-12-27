@@ -38,7 +38,7 @@
 }
 
 .navBtn {
-  width: 97px;
+  width: 120px;
   height: 32px;
   box-shadow: 0 0 10px white;
   background-color: rgb(12, 184, 232);
@@ -46,6 +46,8 @@
 
 .navBtn:hover {
   background: rgb(238, 118, 118);
+  border-radius: 40px;
+  transition: 1s;
 
 }
 
@@ -61,7 +63,7 @@
   width: 100vw;
   background-image: url(/images/banner.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size:100%;
   text-align: center;
 
 }
@@ -72,14 +74,26 @@
 }
 
 /* video page style */
+
+
 .pairvideo {
   display: flex;
   justify-content: center;
   margin: 10px;
+  width: 100%;
   overflow-x: auto;
   background-color: rgb(43, 38, 38);
 }
-
+@media (max-width:1600px){
+  .pairvideo {
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgb(43, 38, 38);
+  }
+}
 .videoboxall {
   text-align: center;
   width: 200px;
@@ -87,6 +101,7 @@
   background-color: white;
   /* height: 320px; */
   box-sizing: border-box;
+ 
   /* border: 1px solid gray; */
   /* background: rgb(184, 178, 178); */
   margin: 20px;
@@ -96,8 +111,13 @@
 
 .videoboxall:hover {
   border-radius: 20px;
+  transform: scale(1.1);
   background-color: rgb(207, 198, 198);
   box-shadow: 10px 10px 10px gray;
+  transition: 0.5s;
+  
+  /* transform: translateZ(50px);
+  transform: translateY(-10px); */
 }
 
 .advetisement {
@@ -177,6 +197,7 @@
 
 
 /* Feedback area style from here  */
+
 .title2 {
   position: relative;
   margin-top: -16px;
@@ -196,9 +217,13 @@
   font-size: 15px;
   color: #2E3D49;
   margin-bottom: 10px;
+  
 }
-
+#feedBACK{
+  text-align: center;
+}
 .feedbox {
+ 
   margin-top: 50px;
   width: 100%;
   display: flex;
@@ -207,16 +232,22 @@
   padding: 50px 80px;
   background-attachment: fixed;
 }
-
+.textarea{
+  resize: none;
+}
 .feed {
   width: 800px;
   height: 400px;
   position: relative;
   border-radius: 10px;
+  position: relative;
+  display: block;
+  margin: auto;
   justify-content: center;
   box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.6),
     0 0 80px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.4);
+ 
 }
 
 .feed form {

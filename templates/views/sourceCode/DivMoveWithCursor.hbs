@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="/css/responsive.css">
+	 <link rel="stylesheet" href="/css/aboutpage.css">
+	 <link rel="stylesheet" href="/css/footer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="shortcut icon" href="/images/channels4_profile.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../templates/views/sourceCode/codecss/style.css">
+    <title> Div Move With Cursor JavaScript Project </title>
+    <style>
+.code{
+    width: 80vw;
+    max-height: 500px;
+    overflow: auto;
+   /* text-align: center; */
+   
+    display: block;
+    margin: auto;
+    background-color: gray;
+}
+
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <br><br><br> <br>
+    <h2 style="text-align: center;">Div Move With Cursor JavaScript Project Source Code </h2>
+    <p style="text-align: center;">Step-1</p>
+    <p style="text-align: center;"> Create a index.html file </p>
+      <p style="text-align: center;"> and add paste the below code in .html file</p>
+    <div class="code">
+        <pre> 
+          
+           
+          &lt;!DOCTYPE html&gt;
+      
+          &lt;html&lt;
+          &lt;head&lt;
+            &lt;title&lt;&lt;/title&lt;
+
+            &lt;style&lt;
+              #circle {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: red;
+                    transition: 0.2s;
+                  }
+            &lt;/style&lt;
+          &lt;/head&lt;
+          &lt;body&lt;
+
+            &lt;div id="circle"&lt;&lt;/div&lt;
+
+
+          &lt;script&lt;
+            document.onmousemove = function(e) { 
+                    var x = e.clientX; 
+                    var y = e.clientY; 
+                    document.getElementById('circle').style.marginLeft  = x+"px";
+                    document.getElementById('circle').style.marginTop  = y+"px";
+            
+                }
+          &lt;/script&lt;
+
+        &lt;/body&lt;
+        &lt;/html&lt;
+      
+    </pre>
+    </div>
+      
+    <br>
+    {{>bottom}}
+</body>
+
+</html>

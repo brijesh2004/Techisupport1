@@ -5,52 +5,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video page</title>
+    <title>DSA Sheet</title>
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+	 <link rel="stylesheet" href="css/aboutpage.css">
+	 <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/channels4_profile.jpg" type="image/jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <style>
+            .sheet-name{
+                text-align: center;
+            }
+            .topic-name{
+                font-size: 30px;
+            }
+            .DSAquestionlinks{
+                text-align: center;
+            }
+            .DSAquestionlinks ol{
+                list-style: none;
+            }
+             .DSAquestionlinks ol li a{
+                
+                text-decoration: none;
+                
+            }
+   table{
+    width:60vw;
+   }
+   tr{
+    border:2px solid red;
+     text-align:center;
+   }
+   .sn{
+    border:2px solid red; 
+    width:33px;
+     text-align:center;
+   }
+   .name{
+    border:2px solid red;
+     width:40vw;
+      text-align:center;
+   }
+   .status{
+    border:2px solid red;
+     width:60px;
+      text-align:center;
+   }
+   .solve{
+    border:2px solid red;
+     width:60px;
+      text-align:center;
+   }
+
+        </style>
 </head>
 
 <body>
     {{>navbar}}
     <br><br><br><br><br><br>
-    <h1>DSA Sheet </h1>
-    <h2>
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sunt architecto a iusto vitae dolorem laudantium
-        neque, exercitationem sequi esse veritatis consequuntur expedita quia perspiciatis maxime aperiam nam ipsa,
-        doloribus officiis ratione blanditiis in corporis accusamus. Optio, labore minima voluptatem pariatur quaerat
-        magnam, ullam a quo illo aliquid minus tempora ratione eveniet adipisci fuga vero eaque eligendi non tenetur ut
-        dignissimos quae beatae culpa repellat! Incidunt minima enim vel magni est quo ducimus aut expedita ratione
-        quisquam
-        natus debitis doloremque accusantium esse molestiae quod perspiciatis sed inventore maxime non repellendus,
-        officiis
-        aspernatur hic. Expedita quis commodi, corrupti similique consequatur cum!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque perferendis aliquam velit cum architecto optio,
-        iusto sapiente ex aspernatur maiores possimus, quibusdam provident ut asperiores voluptatem nemo commodi error
-        debitis itaque. Et assumenda aperiam mollitia tempora excepturi voluptate! Illum cupiditate est distinctio
-        necessitatibus amet rerum qui ab autem, laborum iste? Mollitia, assumenda veniam recusandae excepturi pariatur
-        atque dignissimos dicta, molestiae consequuntur voluptates, nulla porro cumque cum necessitatibus. Perspiciatis
-        nisi at autem sequi veniam sit facilis illum porro repellendus temporibus perferendis, laboriosam consequuntur
-        non amet praesentium quasi adipisci possimus, fugit omnis et eligendi. Similique, laboriosam saepe odio magni
-        delectus possimus iusto.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsa ab explicabo molestias optio cumque animi
-        itaque iusto labore natus. Repellendus, nostrum magni, repellat, rem iste commodi sapiente sequi voluptatem
-        obcaecati laudantium quibusdam qui dicta vitae! Enim impedit incidunt neque inventore vel nulla iusto eaque,
-        nesciunt sit dignissimos alias quas dolorum, ratione facilis error nam totam ea! Quas maxime, nulla, nisi
-        doloremque ex exercitationem sequi voluptate consectetur minima id repudiandae voluptatibus natus laboriosam,
-        praesentium quos eveniet nam rerum vitae explicabo. Ea placeat pariatur commodi explicabo in eaque? Illum magnam
-        architecto, quod atque sunt est quae animi officiis incidunt dolor saepe ipsum vel debitis! Non, dolore!
-        Aliquid, ab obcaecati eveniet tempora reprehenderit illo iste quidem rem doloribus itaque animi eaque aspernatur
-        voluptas maiores at recusandae non delectus corrupti officia facilis. Enim perspiciatis earum iure odit rem
-        voluptate dicta explicabo quasi, placeat facere? Rem laborum molestiae consectetur earum praesentium natus
-        tenetur, reprehenderit eum perspiciatis tempora! Quaerat, a pariatur nemo cupiditate labore ipsam! Maiores odit
-        quos repudiandae harum sequi. Accusamus nesciunt facere maxime cum, soluta dolores esse quibusdam optio
-        distinctio dolore similique quam nam fugit officia enim odit quo ipsa aliquid explicabo veritatis ipsum
-        voluptates. Animi provident veritatis id cumque adipisci autem! Aspernatur!
-    </h2>
+    <h1 class="sheet-name">DSA Sheet By TECHI SUPPORT </h1>
+       <table style="width:60vw;">
+        <tr style="border:2px solid red; text-align:center;">
+            <th style="border:2px solid red; width:33px; text-align:center;"  class="sn">sn</trh>
+            <th style="border:2px solid red; width:40vw; text-align:center;" class="name">name</th>
+            <th style="border:2px solid red; width:60px; text-align:center;" class="status">status</th>
+            <th style="border:2px solid red; width:60px; text-align:center;" class="solve">solve</th>
+        </tr>
+        <tr>
+            <td class="sn">1</td>
+            <td class="name">Two Sum</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/two-sum/">Solve</a> </button></td>
+        </tr>
+         <tr>
+            <td class="sn">2</td>
+            <td class="name">Unique Number of Occurrences</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button><a href="https://leetcode.com/problems/unique-number-of-occurrences/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">3</td>
+            <td class="name">Remove Duplicates from Sorted Array</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button>  <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">4</td>
+            <td class="name">Remove Element</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/remove-element/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">5</td>
+            <td class="name">Plus One</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/plus-one/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">6</td>
+            <td class="name">Best Time to Buy and Sell Stock</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">7</td>
+            <td class="name">Majority Element</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/majority-element/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">8</td>
+            <td class="name">Move Zeroes</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/move-zeroes/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">9</td>
+            <td class="name">Find All Numbers Disappeared in an Array</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">10</td>
+            <td class="name">Max Consecutive Ones</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/max-consecutive-ones/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">11</td>
+            <td class="name">Array Partition</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/array-partition/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">12</td>
+            <td class="name">Distribute Candies</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/distribute-candies/">Solve</a></button></td>
+        </tr>
+         <tr>
+            <td class="sn">13</td>
+            <td class="name">harmonious-subsequence</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/longest-harmonious-subsequence/">Solve</a></button></td>
+        </tr>
+        <tr>
+            <td class="sn">14</td>
+            <td class="name">Baseball Game</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/baseball-game/">Solve</a></button></td>
+        </tr>
+        <tr>
+            <td class="sn">15</td>
+            <td class="name">Largest Triangle Area</td>
+            <td class="status">Easy</td>
+            <td class="solve"><button> <a href="https://leetcode.com/problems/largest-triangle-area/">Solve</a></button></td>
+        </tr>
+       </table>
     {{>bottom}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

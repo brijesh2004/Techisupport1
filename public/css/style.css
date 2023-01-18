@@ -302,3 +302,19 @@
   cursor: pointer;
 }
 
+
+
+/********************************************* table css start **************************************** */
+.table_advertisment{
+  display: flex;
+}
+.tableadvertisement{
+  margin: 20px;
+  text-align: center;
+  width: 30vw;
+  height: 600px;
+  border: 1px solid black;
+}
+.tablead{
+  background: 100%;
+}

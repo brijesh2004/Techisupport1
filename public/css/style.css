@@ -80,6 +80,7 @@
   display: flex;
   justify-content: center;
   margin: 10px;
+  margin-top: 250px;
   width: 100%;
   overflow-x: auto;
   background-color: rgb(43, 38, 38);
@@ -90,6 +91,7 @@
     justify-content: left;
     margin: 10px;
     width: 100%;
+    margin-top: 250px;
     overflow-x: auto;
     background-color: rgb(43, 38, 38);
   }

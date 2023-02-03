@@ -173,8 +173,8 @@ app.get("/templates/views/sourceCode/Pop_balloon", (req, res) => {
 app.get("/templates/views/sourceCode/digitalClock", (req, res) => {
     res.render("sourceCode/digitalClock");
 })
-app.get("/templates/views/sourceCode/toggleDarkMode", (req, res) => {
-    res.render("sourceCode/toggleDarkMode");
+app.get("/templates/views/sourceCode/ToggleDarkMode", (req, res) => {
+    res.render("sourceCode/ToggleDarkMode");
 })
 
 

@@ -173,8 +173,13 @@ app.get("/templates/views/sourceCode/Pop_balloon", (req, res) => {
 app.get("/templates/views/sourceCode/digitalClock", (req, res) => {
     res.render("sourceCode/digitalClock");
 })
+<<<<<<< HEAD
 app.get("/templates/views/sourceCode/toggleDarkMode", (req, res) => {
     res.render("sourceCode/toggleDarkMode");
+=======
+app.get("/templates/views/sourceCode/ToggleDarkMode", (req, res) => {
+    res.render("sourceCode/ToggleDarkMode");
+>>>>>>> ec8d96428701ee1416dc3b8d89dd3a4d47893129
 })
 
 
@@ -190,4 +195,8 @@ app.get("*", (req, res) => {
 
 app.listen(port, () => {
     console.log(`Listenning on ${port}`);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> ec8d96428701ee1416dc3b8d89dd3a4d47893129

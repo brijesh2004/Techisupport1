@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="/css/responsive.css">
 	 <link rel="stylesheet" href="/css/aboutpage.css">
 	 <link rel="stylesheet" href="/css/footer.css">
+      <link rel="stylesheet" href="/css/codecss.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="shortcut icon" href="/images/channels4_profile.jpg" type="image/jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -18,19 +19,6 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9915106184713182"
      crossorigin="anonymous"></script>
     <title> Wave  CSS Project </title>
-    <style>
-.code{
-    width: 80vw;
-    max-height: 500px;
-    overflow: auto;
-   /* text-align: center; */
-   
-    display: block;
-    margin: auto;
-    background-color: gray;
-}
-
-    </style>
 </head>
 
 <body>
@@ -42,7 +30,8 @@
       <p style="text-align: center;"> and add paste the below code in .html file</p>
     <div class="code">
         <pre> 
-          
+           <button class="cpybtn" onclick="CopyHTMLCode()">Copy</button>
+        <p id="htmlcodetocopy">
            
           &lt;!DOCTYPE html&gt;
           &lt;html lang="en"&gt;
@@ -80,6 +69,7 @@
                   &lt;/div&gt;
             &lt;/body&gt;
             &lt;/html&gt;
+            </p>
     </pre>
     </div>
     <p style="text-align: center;">Step-2</p>
@@ -87,6 +77,9 @@
    <p style="text-align: center;"> and add paste the below code in .css file </p>
     <div class="code">
         <pre>
+             <button class="cpybtn" onclick="CopyCSSCode()">Copy</button>
+             <p id="copyCsscode">
+            
                    .wheel{
              position: absolute;
              width: 500px;
@@ -190,11 +183,35 @@
                 transform: rotate(-360deg);
             }
         }
+        </p>
         </pre>
     </div>
    
     <br>
     {{>bottom}}
+     <script>
+      function CopyHTMLCode(){
+     let copyText = document.getElementById("htmlcodetocopy").innerText;
+     navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        alert("Copied to clipboard"+ copyText);
+    });
+
+      }
+  
+
+   function CopyCSSCode(){
+     let copyText = document.getElementById("copyCsscode").innerText;
+     navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        alert("Copied to clipboard"+ copyText);
+    });
+
+      }
+
+    </script>
 </body>
 
 </html>

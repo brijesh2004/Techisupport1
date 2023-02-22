@@ -235,41 +235,45 @@ span
 				<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
 				<button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
 			</div>
-			<div class="social-icons">
+			{{!-- <div class="social-icons">
 				<img src="/images/R (1).jfif">
 				<img src="/images/OIP.jfif">
 				<img src="/images/R.png">
-			</div>
+			</div> --}}
 			
 			<!-- Login Form -->
-			<form id="login" class="input-group" action="index.html">
+			<form id="login" class="input-group" action="loginStudent" method="post">
 				<div class="inp">
-					<img src="/images/user.png"><input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
+					<img src="/images/user.png">
+					<input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required" name="email">
 				</div>
 				<div class="inp">
-					<img src="/images/pass.jfif"><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
+					<img src="/images/pass.jfif">
+					<input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required" name="password">
 				</div>
-				<input type="checkbox" class="check-box">Remember Password
+				{{!-- <input type="checkbox" class="check-box">Remember Password --}}
 				<button type="submit" class="submit-btn">Log In</button>
 			</form>
 
 
-			<div class="other" id="other">
+			{{!-- <div class="other" id="other">
 				<div class="instead">
 					<h3>or</h3>
 				</div>
 				<button class="connect" onclick="google()">
 					<img src="/images/google.jfif"><span>Sign in with Google</span>
 				</button>
-			</div>
+			</div> --}}
 			
 			<!-- Registration Form -->
-			<form id="register" class="input-group">
-				<input type="text" class="input-field" placeholder="Full Name" required="required">
-				<input type="email" class="input-field" placeholder="Email Address" required="required">
-				<input type="password" class="input-field" placeholder="Create Password" name="psame" required="required">
-				<input type="password" class="input-field" placeholder="Confirm Password" name="psame" required="required">
-				<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms & Conditions
+			<form action="RegisterStudent" method="POST" id="register" class="input-group" >
+				<input type="text" class="input-field" placeholder="Full Name" required="required" name="name">
+				<input type="email" class="input-field" placeholder="Email Address" required="required" name="email">
+				<input type="password" class="input-field" placeholder="Create Password" name="password" required="required">
+				<input type="password" class="input-field" placeholder="Confirm Password" name="confirmPassword" required="required">
+				<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms and Conditions
+
+				{{!-- <button type="submit" id="btnSubmit" >Register</button> --}}
 				<button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
 			</form>
 		</div>
@@ -286,7 +290,7 @@ var x = document.getElementById("login");
     x.style.left = "-400px";
     y.style.left = "50px";
     z.style.left = "110px";
-    w.style.visibility = "hidden";
+   // w.style.visibility = "hidden";
     b.style.color = "#fff";
     a.style.color = "#000";
   }
@@ -295,17 +299,17 @@ var x = document.getElementById("login");
     x.style.left = "50px";
     y.style.left = "450px";
     z.style.left = "0px";
-    w.style.visibility = "visible";
+    //w.style.visibility = "visible";
     a.style.color = "#fff";
     b.style.color = "#000";
   }
     
-  // CheckBox Function
+   //CheckBox Function
   function goFurther(){
-    if (document.getElementById("chkAgree").checked == true) {
-      document.getElementById('btnSubmit').style = 'background: linear-gradient(to right, #FA4B37, #DF2771);';
-    }
-    else{
+   if (document.getElementById("chkAgree").checked == true) {
+     document.getElementById('btnSubmit').style = 'background: linear-gradient(to right, #FA4B37, #DF2771);';
+   }
+   else{
       document.getElementById('btnSubmit').style = 'background: lightgray;';
     }
   }
@@ -316,9 +320,9 @@ var x = document.getElementById("login");
   
 
 
-              $(document).ready(function(){
+             $(document).ready(function(){
     $("form").submit(function(){
-      alert("Great Job !");
+    alert("Great Job !");
     });
   });
         </script>

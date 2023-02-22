@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/aboutpage.css">
+    <link rel="stylesheet" href="/css/footer.css">
+     <link rel="stylesheet" href="/css/codecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/images/channels4_profile.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../templates/views/sourceCode/codecss/style.css">
+    {{!-- // Advertisement code --}}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9915106184713182"
+     crossorigin="anonymous"></script>
+    <title>Analog Clock </title>
+</head>
+
+<body>
+    {{>navbar}}
+    <br><br><br><br>
+    <h2 style="text-align: center;">Toggle Dark Mode JavaScript Project Source Code </h2>
+    <p style="text-align: center;"> Step-1</p>
+    <p style="text-align: center;"> Create a index.html file 
+    and add paste the below code in .html file</p>
+    <div class="code">
+        <pre style="margin-left: 50px;">
+        <button class="cpybtn" onclick="CopyHTMLCode()">Copy</button>
+        <p id="htmlcodetocopy">
+          &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;title&gt;Toggle Dark Mode&lt;/title&gt;
+&lt;/head&gt;
+&lt;body id="body"&gt;
+    &lt;div id="box"&gt;
+        &lt;div id="circle" onclick="ToggleDark()"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </p>
+    </pre>
+    </div>
+    <p style="text-align: center;"> Step-2</p>
+    <p style="text-align: center;"> Create a style.css file 
+    and add paste the below code in .css file</p>
+    <div class="code" >
+        <pre style="margin-left: 50px;">
+        
+             <button class="cpybtn" onclick="CopyCSSCode()">Copy</button>
+             <p id="copyCSS">
+body{
+    background-color: black;
+  transition: 2s;
+}
+#box{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+
+}
+#circle{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 2s;
+}
+</p>
+            </pre>
+            </div>
+
+      <p style="text-align: center;"> Step-3</p>
+    <p style="text-align: center;"> Create a script.js file 
+    and add paste the below code in .js file</p>
+    <div class="code">
+        <pre style="margin-left: 50px;">
+             <button class="cpybtn" onclick="CopyJSCode()">Copy</button>
+             <p id="copyJS">
+                const circle = document.getElementById("circle");
+const box = document.getElementById("box");
+const body = document.getElementById("body");
+circle.style.backgroundColor="red";
+
+function ToggleDark(){
+    if(circle.style.backgroundColor=="red"){
+        body.style.backgroundColor="gray";
+        circle.style.backgroundColor="black";
+        circle.style.translate="70px";
+    }
+    else{
+        body.style.backgroundColor="black";
+        circle.style.backgroundColor="red";
+        circle.style.translate="0px";
+    }
+}
+                </p>
+                </pre>
+                </div>
+    <br><br>
+    {{>bottom}}
+
+    <script>
+      function CopyHTMLCode(){
+     let copyText = document.getElementById("htmlcodetocopy").innerText;
+     navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        alert("Copied to clipboard"+ copyText);
+    });
+
+      }
+  
+   function CopyCSSCode(){
+     let copyText = document.getElementById("copyCSS").innerText;
+     navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        alert("Copied to clipboard"+ copyText);
+    });
+      }
+      function CopyJSCode(){
+     let copyText = document.getElementById("copyJS").innerText;
+     navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        alert("Copied to clipboard"+ copyText);
+    });
+      }
+
+    </script>
+</body>
+
+</html>

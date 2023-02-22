@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/aboutpage.css">
+    <link rel="stylesheet" href="/css/footer.css">
+     <link rel="stylesheet" href="/css/codecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/images/channels4_profile.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../templates/views/sourceCode/codecss/style.css">
+    {{!-- // Advertisement code --}}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9915106184713182"
+     crossorigin="anonymous"></script>
+    <title>Analog Clock </title>
+</head>
+
+<body>
+    {{>navbar}}
+    <br><br><br><br>
+    <h2 style="text-align: center;">Analog Clock JavaScript Project Source Code </h2>
+    <p style="text-align: center;"> Step-1</p>
+    <p style="text-align: center;"> Create a index.html file 
+    and add paste the below code in .html file</p>
+    <div class="code">
+        <pre style="margin-left: 50px;">
+        
+           &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;title>Digital Clock&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="box"&gt;
+            &lt;h1>  &#9829; Digital Clock &#9829;&lt;/h1&gt;
+            &lt;div id="time"&gt;
+                &lt;div class="circle" style="--clr:green"&gt;
+                    &lt;div class="dots hr_dot"&gt;&lt;/div&gt;
+                    &lt;svg&gt;
+                        &lt;circle cx="70" cy="70" r="70"&gt;&lt;/circle&gt;
+                        &lt;circle cx="70" cy="70" r="70" id="hh"&gt;&lt;/circle&gt;
+                    &lt;/svg&gt;
+                    &lt;div id="hours"&gt;00&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="circle"  style="--clr:blue"&gt;
+                    &lt;div class="dots min_dot"&gt;&lt;/div&gt;
+                    &lt;svg&gt;
+                        &lt;circle cx="70" cy="70" r="70"&gt;&lt;/circle&gt;
+                        &lt;circle cx="70" cy="70" r="70" id="mm"&gt;&lt;/circle&gt;
+                    &lt;/svg&gt;
+                    &lt;div id="minutes"&gt;00&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="circle"  style="--clr:red"&gt;
+                    &lt;div class="dots sec_dot"&gt;&lt;/div&gt;
+                    &lt;svg&gt;
+                        &lt;circle cx="70" cy="70" r="70"&gt;&lt;/circle&gt;
+                        &lt;circle cx="70" cy="70" r="70" id="ss"&gt;&lt;/circle&gt;
+                    &lt;/svg&gt;
+                    &lt;div id="second">00&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="ap"&gt;
+                    &lt;div id="ampm"&gt;AM&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    </div>
+
+  <p style="text-align: center;"> Step-2</p>
+    <p style="text-align: center;"> Create a style.css file 
+    and add paste the below code in .css file</p>
+
+    <div class="code">
+        <pre style="margin-left: 50px;">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+}
+.container{
+    border: 2px solid red;
+    position: relative;
+    width: 650px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+background-color: rgb(250 , 136 , 136);
+}
+.box{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        
+}
+h1{
+    color: blue;
+}
+
+#time{
+    display: flex;
+    gap: 40px;
+    color: white;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+#time .circle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 4;
+    transform: translate(5px , 5px);
+
+}
+
+#time .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+
+}
+#time div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+#time .ap{
+    position: relative;
+    font-size: 1em;
+    transform: translateX(-20px);
+}
+.dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.dots::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+        </pre>
+        </div>
+
+  <p style="text-align: center;"> Step-3</p>
+    <p style="text-align: center;"> Create a script.js file 
+    and add paste the below code in .js file</p>
+
+         <div class="code">
+        <pre style="margin-left: 50px;">
+       
+
+setInterval(()=>{
+    let hours = document.getElementById('hours');
+    let minutes = document.getElementById('minutes');
+    let second = document.getElementById('second');
+    let ampm = document.getElementById('ampm');
+
+    let hh = document.getElementById('hh');
+    let mm = document.getElementById('mm');
+    let ss = document.getElementById('ss');
+
+    let hr_dot = document.querySelector('.hr_dot');
+    let min_dot = document.querySelector('.min_dot');
+    let sec_dot = document.querySelector('.sec_dot');
+
+    let h= new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
+
+    let am = h>=12?"PM":"AM";
+
+    // convert 24 hours to 12 hours
+
+    if(h>12){
+        h=h-12;
+    }
+    // add 0 before single digits
+    h = h<10?"0"+h:h;
+    m = m<10?"0"+m:m;
+    s = s<10?"0"+s:s;
+
+
+    hours.innerHTML = h+"&lt;br&gt; &lt;span&gt;hours&lt;/span&gt;";
+    minutes.innerHTML=m+"&lt;br> &lt;span&gt;minutes&lt;/span&gt;";
+    second.innerHTML=s+"&lt;br> &lt;span&gt;second&lt;/span&gt;";
+    ampm.innerHTML = am;
+
+    hh.style.strokeDashoffset=440-(440*h)/12;
+    mm.style.strokeDashoffset=440-(440*m)/60;
+    ss.style.strokeDashoffset=440-(440*s)/60;
+   
+    hr_dot.style.transform=`rotate(${h*30}deg)`;
+    //360/12=30
+    min_dot.style.transform=`rotate(${m*6}deg)`;
+    // 360/60=6
+    sec_dot.style.transform=`rotate(${s*6}deg)`;
+
+})
+        </pre>
+        </div>
+
+
+   
+    <br><br>
+    {{>bottom}}
+</body>
+
+</html>
